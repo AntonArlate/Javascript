@@ -1,0 +1,150 @@
+<!-- 
+    
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="task-box">
+        <button onclick="task1()">Task 1</button>
+        <p>
+            Дан объект numbers. Необходимо в консоль вывести все значения больше или равные 3. <br>
+            <br>
+            const numbers = {<br>
+            keyin1: 1,<br>
+            keyin2: 2,<br>
+            keyin3: 3,<br>
+            keyin4: 4,<br>
+            keyin5: 5,<br>
+            keyin6: 6,<br>
+            keyin7: 7,<br>
+            } <br>
+        </p>
+        <div class="result" id="result1"></div>
+    </div>
+
+    <div class="task-box">
+        <button onclick="task2()">Task 2</button>
+        <p>
+            Необходимо из объекта, который лежит в константе post вывести значения, к которым приписан комментарий, в
+            консоль. <br>
+            <br>
+            const post = { <br>
+            author: "John", // вывести этот текст<br>
+            postId: 23,<br>
+            comments: [<br>
+            {<br>
+            userId: 10,<br>
+            userName: "Alex",<br>
+            text: "lorem ipsum",<br>
+            rating: {<br>
+            likes: 10,<br>
+            dislikes: 2, // вывести это число<br>
+            },<br>
+            },<br>
+            {<br>
+            userId: 5, // вывести это число<br>
+            userName: "Jane",<br>
+            text: "lorem ipsum 2", // вывести этот текст<br>
+            rating: {<br>
+            likes: 3,<br>
+            dislikes: 1,<br>
+            },<br>
+            },<br>
+            ],<br>
+            };<br>
+        </p>
+        <div class="result" id="result2"></div>
+    </div>
+
+    <div class="task-box">
+        <button onclick="task3()">Task 3</button>
+        <p>
+            Дан массив products, необходимо цену каждого продукта уменьшить на 15% используя метод forEach. <br>
+            <br>
+            const products = [<br>
+            {<br>
+            id: 3,<br>
+            price: 200,<br>
+            },<br>
+            {<br>
+            id: 4,<br>
+            price: 900,<br>
+            },<br>
+            {<br>
+            id: 1,<br>
+            price: 1000,<br>
+            },<br>
+            ];<br>
+        </p>
+        <div class="result" id="result3"></div>
+    </div>
+
+    <div class="task-box">
+        <button onclick="task4()">Task 4</button><br>
+        <pre>
+1. Необходимо вывести в консоль массив продуктов в котором есть хоть одна фотография используя метод filter. Исходные данные - массив products.
+2. Необходимо отсортировать массив products используя метод sort по цене, начиная с самой маленькой, заканчивая самой большой ценой, после чего вывести отсортированный массив в консоль.
+
+```
+const products = [
+    {
+        id: 3,
+        price: 127,
+        photos: [
+            "1.jpg",
+            "2.jpg",
+        ],
+    },
+    {
+        id: 5,
+        price: 499,
+        photos: [],
+    },
+    {
+        id: 10,
+        price: 26,
+        photos: [
+            "3.jpg",
+        ],
+    },
+    {
+        id: 8,
+        price: 78,
+    },
+];
+        </pre>
+        <div class="result" id="result4"></div>
+    </div>
+
+    <div class="task-box">
+        <button onclick="task5()">**Task 5**</button>
+        <p>
+            Дано 2 массива <br>
+            const en = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];<br>
+            const ru = ["понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"];<br>
+            ```<br>
+            <br>
+            Вам необходимо объединить 2 этих массива, чтобы значения первого массива были ключами, а значения второго
+            массива — значениями.
+        </p>
+        <div class="result" id="result5"></div>
+    </div>
+
+    <script src="./task1ForObjectKey.js"></script>
+    <script src="./task2FindKeysInObj.js"></script>
+    <script src="./task3PriceChange.js"></script>
+    <script src="./task4ProductPhotoAndPriceSort.js"></script>
+    <script src="./task5Merging.js"></script>
+
+</body>
+
+</html>
